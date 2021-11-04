@@ -9,4 +9,4 @@ This is my first game made with golang, and as I joined the Game Off a little la
 
 ## Building From Source
 
-If you're going to build the game from source, make sure you have the Go 1.17.1 Compiler installed on your pc.
+If you're going to build the game from source, make sure you have the Go 1.17.1 Compiler installed on your pc, then run either `run.bat` or `run.sh` depending on your system(sorry macOS I don't like you).
