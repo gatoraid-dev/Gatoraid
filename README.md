@@ -11,7 +11,7 @@ This is my first game made with golang, and as I joined the Game Off a little la
 
 ## Building From Source
 
-If you're going to build the game from source, make sure you have the Go 1.17.1 Compiler installed on your pc, then run either `run.bat` or `run.sh` depending on your system(sorry macOS I don't like you).
+If you're going to build the game from source, make sure you have the Go 1.17.1 Compiler installed on your pc, then run either `run.bat` or `run.sh` depending on your system.
 
 ## Updates
 
@@ -20,7 +20,8 @@ I will post information about what I've done for each development day here.
 #### Day 1
 
 I started development, attempted to create a room size generator that worked(though it was not truly random) and got an error in `visual.go` as I finished the day, leaving it for the next.
-(No image avaliable)
+
+##### (No image avaliable)
 #### Day 2
 
 Today I accomplished lots. I updated the room generator, added user input for the game difficulty, and I now have a clearer concept of how to make infinitely generated rooms.
