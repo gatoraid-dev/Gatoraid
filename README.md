@@ -29,4 +29,4 @@ Accomplishments:
 - Added user input for difficulty
 - Completed Room Map Generator (shows a box with the character in it to represent the current room and player position, player currently doesn't show)
 
-!(Image showing difficulty input and slight view of room map)[https://cdn.discordapp.com/attachments/666427327437340687/906010154024185896/unknown.png]
+![Image showing difficulty input and slight view of room map](https://cdn.discordapp.com/attachments/666427327437340687/906010154024185896/unknown.png)
