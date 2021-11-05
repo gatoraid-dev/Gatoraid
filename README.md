@@ -1,6 +1,6 @@
 # Gatoraid
 ###### (lol, get it?)
-![Build: Failing](https://img.shields.io/badge/build-failing-red)
+[![CircleCI](https://circleci.com/gh/csharpdf/Gatoraid/tree/master.svg?style=svg)](https://circleci.com/gh/csharpdf/Gatoraid/tree/master)
 
 A simple Text Dungeon game for the 2021 Game Off
 
