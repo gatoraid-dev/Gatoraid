@@ -39,8 +39,8 @@ func init() {
 				| ~ W ~  |  ~ S ~ |
 				|        |        |
 				-------------------  `
-	fmt.Println("Welcome to Gatoraid!\nThis is a text-based dungeon made for the 2021 Game Off!\n")
-	write("Starting adventure...\n\n")
+	fmt.Println("Welcome to Gatoraid!\nThis is a text-based dungeon made for the 2021 Game Off!")
+	write("\nStarting adventure...\n\n")
 	write("What difficulty would you like to play? You can choose 'easy' mode, 'normal' mode, and 'hard' mode! Hint: hard mode is way too hard") //make room counter
 	fmt.Print("> ")
 	getD()
