@@ -25,7 +25,7 @@ I started development, attempted to create a room size generator that worked(tho
 
 Today I accomplished lots. I updated the room generator, added user input for the game difficulty, and I now have a clearer concept of how to make infinitely generated rooms.
 Accomplishments:
-- Updated room size generator(true randomness, difficulties are more unique)
+- Updated room size generator(true randomness, difficulties are more unique in terms of room sizes)
 - Added user input for difficulty
 - Completed Room Map Generator (shows a box with the character in it to represent the current room and player position, player currently doesn't show)
 
