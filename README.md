@@ -36,4 +36,4 @@ Accomplishments:
 
 To be honest, I didn't do much today, I really was just polishing the map and trying to think of an efficient way to make the system of infinite rooms. You could call it a brainstorm.
 
-##### (No image avaliable, same as Day 2
+##### (No image avaliable, same as Day 2)
