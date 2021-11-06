@@ -31,3 +31,9 @@ Accomplishments:
 - Completed Room Map Generator (shows a box with the character in it to represent the current room and player position, player currently doesn't show)
 
 ![Image showing difficulty input and slight view of room map](https://cdn.discordapp.com/attachments/666427327437340687/906010154024185896/unknown.png)
+
+#### Day 3
+
+To be honest, I didn't do much today, I really was just polishing the map and trying to think of an efficient way to make the system of infinite rooms. You could call it a brainstorm. I finished Day 3 at about 12:10 am, so you might be able to tell that as I was brainstorming I was also just procrastinating, doing other things.
+
+##### (No image avaliable, same as Day 2)
