@@ -6,16 +6,18 @@ package main
 import (
 	"fmt"
 
+	"strconv"
 	"strings"
 	"time"
 
 	dun "github.com/csharpdf/Gatoraid/dungeon"
-	"github.com/csharpdf/Gatoraid/visual"
+	//"github.com/csharpdf/Gatoraid/visual"
 )
 
 var compass string
 var d = dun.NewDungeonGen(3)
 var resp string
+var dirs []string
 
 func write(t string) {
 	x := []rune(t)
@@ -41,7 +43,7 @@ func init() {
 				-------------------  `
 	fmt.Println("Welcome to Gatoraid!\nThis is a text-based dungeon made for the 2021 Game Off!")
 	write("\nStarting adventure...\n\n")
-	write("What difficulty would you like to play? You can choose 'easy' mode, 'normal' mode, and 'hard' mode! Hint: hard mode is way too hard") //make room counter
+	//write("What difficulty would you like to play? You can choose 'easy' mode, 'normal' mode, and 'hard' mode! Hint: hard mode is way too hard") //make room counter
 	fmt.Print("> ")
 	getD()
 }
@@ -62,8 +64,14 @@ func getD() {
 }
 func main() {
 	room := d.NewRoom()
-	write("You walk down a stairwell that reminds you of your past. This is not the first dungeon you've explored, and it will certainly not be the last. You stumble into a dark room as the doors behind you close, not knowing where the first monsters are hiding.")
-	write("\nCreating map of room...\n")
+	//write("You walk down a stairwell that reminds you of your past. This is not the first dungeon you've explored, and it will certainly not be the last. You stumble into a dark room as the doors behind you close, not knowing where the first monsters are hiding.")
+	for _, v := range room.Directions {
+		if v != 0 {
+			//append(dirs, string(v))
+		}
+	}
+	write("The room is " + strconv.Itoa(room.Size.X) + "x" + strconv.Itoa(room.Size.Y) + "units, and you notice that there are entrances on ")
+	//write("\nCreating map of room...\n")
 	//fmt.Println(room.Size.X, "x | ", room.Size.Y, "y\n\n", d.Difficulty)
-	visual.WriteMap(&room)
+	//visual.WriteMap(&room)
 }

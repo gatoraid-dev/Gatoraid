@@ -10,6 +10,7 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+type Coordinates size
 type dungeonGenerator struct {
 	Difficulty int //1-easy|2-normal|3-hard
 }
@@ -28,7 +29,6 @@ func NewDungeonGen(difficulty int) dungeonGenerator {
 	gen.Difficulty = difficulty
 	return gen
 }
-
 func (d *dungeonGenerator) NewRoom() Room {
 	r := Room{}
 	dirNum := rand.Intn(5-1) + 1 //creates random number of Directions
@@ -43,17 +43,17 @@ func (d *dungeonGenerator) NewRoom() Room {
 			}
 		case 2:
 			if r.Directions[1] == rune(0) {
-				r.Directions[1] = 'N'
+				r.Directions[1] = 'E'
 				//append(r.Directions, 'N')
 			}
 		case 3:
 			if r.Directions[2] == rune(0) {
-				r.Directions[2] = 'N'
+				r.Directions[2] = 'W'
 				//append(r.Directions, 'N')
 			}
 		case 4:
 			if r.Directions[3] == rune(0) {
-				r.Directions[3] = 'N'
+				r.Directions[3] = 'S'
 				//append(r.Directions, 'N')
 			}
 		}
