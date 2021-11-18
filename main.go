@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
+	"math/rand"
 	dun "github.com/csharpdf/Gatoraid/dungeon"
 	//"github.com/csharpdf/Gatoraid/visual"
 )
@@ -18,7 +18,7 @@ var compass string
 var d = dun.NewDungeonGen(3)
 var resp string
 var dirs []string
-
+var difficulty int
 func write(t string) {
 	x := []rune(t)
 	for i := 0; i < len(x); i++ {
@@ -31,18 +31,7 @@ func write(t string) {
 	}
 }
 func init() {
-	compass =
-		`        _________________
-                |        |        |
-				| ~ N ~  |  ~ E ~ |
-				|        |        |
-				|--------|--------|
-				|        |        |
-				| ~ W ~  |  ~ S ~ |
-				|        |        |
-				-------------------  `
-	fmt.Println("Welcome to Gatoraid!\nThis is a text-based dungeon made for the 2021 Game Off!")
-	write("\nStarting adventure...\n\n")
+	fmt.Println("Welcome to Gatoraid!\nThis is a infinite text-based dungeon crawler made for the 2021 Game Off!\ngeneral commands are 'use [item]' and 'proceed'\n\n")
 	//write("What difficulty would you like to play? You can choose 'easy' mode, 'normal' mode, and 'hard' mode! Hint: hard mode is way too hard") //make room counter
 	fmt.Print("> ")
 	getD()
@@ -51,27 +40,38 @@ func getD() {
 	fmt.Scanln(&resp)
 	switch strings.ToLower(resp) {
 	case "easy":
-		d.Difficulty = 1
+		difficulty = 1
 	case "normal":
-		d.Difficulty = 2
+		difficulty = 2
 	case "hard":
-		d.Difficulty = 3
+		difficulty = 3
 	default:
 		write("\nInvalid gamemode given. Gamemodes are 'easy', 'normal', and 'hard'.")
 		fmt.Print("> ")
 		getD()
 	}
 }
-func main() {
-	room := d.NewRoom()
-	//write("You walk down a stairwell that reminds you of your past. This is not the first dungeon you've explored, and it will certainly not be the last. You stumble into a dark room as the doors behind you close, not knowing where the first monsters are hiding.")
-	for _, v := range room.Directions {
-		if v != 0 {
-			//append(dirs, string(v))
+func parseMsg() {
+	rand.Seed(time.Now().UnixNano())
+	fmt.Scanln(&resp)
+	switch strings.ToLower(resp) {
+	case "proceed":
+		write("You proceed down the seemingly infinite hall.")
+		y := rand.Intn(100+1) - 1
+		var x int;
+		switch difficulty {
+		case 1:
+			x = 20
+		case 2:
+			x = 45
+		case 3:
+			x = 80
 		}
+		if (y ) //TODO: make rand enemy generator based on difficulty
 	}
-	write("The room is " + strconv.Itoa(room.Size.X) + "x" + strconv.Itoa(room.Size.Y) + "units, and you notice that there are entrances on ")
-	//write("\nCreating map of room...\n")
-	//fmt.Println(room.Size.X, "x | ", room.Size.Y, "y\n\n", d.Difficulty)
-	//visual.WriteMap(&room)
+}
+func main() {
+	//write("You walk down a stairwell that reminds you of your past. This is not the first dungeon you've explored, and it will certainly not be the last. You stumble into a dark, long hall as the doors behind you close, not knowing where the first monsters are hiding.")
+	//! removed rooms and basically everything to actually make it "simple" 
+	fmt.Println("You can choose to proceed, or check your inventory.\n> ")
 }
