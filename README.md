@@ -37,3 +37,7 @@ Accomplishments:
 To be honest, I didn't do much today, I really was just polishing the map and trying to think of an efficient way to make the system of infinite rooms. You could call it a brainstorm. I finished Day 3 at about 12:10 am, so you might be able to tell that as I was brainstorming I was also just procrastinating, doing other things.
 
 ##### (No image avaliable, same as Day 2)
+
+#### Day 4
+
+I had some personal stuff to attend to, so I couldn't keep the development daily. I also realized that giving the game a visual and calling it "simple" at the same time would be kind of misleading(not that it would hurt though). Because of this, I decided to scrap the visual and room idea and just stay completely text based, confronting one enemy after the other with no end. Now it's starting to sound like a generic dungeon-crawler. I worked a little bit on the enemy randomizer and the different commands you could use(`use \[item]` and `proceed`), but overall I didn't complete much today either. This was written 11/17/21.
